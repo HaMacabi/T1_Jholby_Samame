@@ -19,12 +19,12 @@ public class TestEntidades {
 		TblProducto prod = new TblProducto();
 		TblProductoImp proimp = new TblProductoImp();
 
-		
+		/*
 		 //CREAR
-		 prod.setNombre("Inca Kola 2 LT");
-		 prod.setPrecio(9);
-		 prod.setDescripcion("Con promoción");
-		 prod.setEstado("Inactivo");
+		 prod.setNombre("Avena 3 Ositos 2 kg");
+		 prod.setPrecio(12);
+		 prod.setDescripcion("Reforzada con hierro y calcio");
+		 prod.setEstado("Activo");
 		 
 		 Date fecha = new Date();
 		 Date fechafab = new Date(fecha.getTime());
@@ -39,15 +39,15 @@ public class TestEntidades {
 		 // Llamar método y enviarle objeto seteado
 		 proimp.newProduct(prod); 
 		 System.out.println("Producto registrado exitosamente");
-		 
+		 */
 		
 		
 		/*
 		// EDITAR
-		 prod.setIdproducto(10);
-		 prod.setNombre("Leche Gloria 1.5 LT");
-		 prod.setPrecio(8);
-		 prod.setDescripcion("Reforzado con Hierro");
+		 prod.setIdproducto(24);
+		 prod.setNombre("Avena 3 Ositos 1 kg");
+		 prod.setPrecio(7);
+		 prod.setDescripcion("Reforzado con hierro");
 		 prod.setEstado("Inactivo");
 		Date fecha = new Date();
 		Date fechafab = new Date(fecha.getTime());
@@ -62,19 +62,20 @@ public class TestEntidades {
 		// Llamar método y enviarle objeto seteado
 		proimp.updateProduct(prod);
 		System.out.println("Producto editado exitosamente");
-		*/	 
+		*/
 		
 		 
 		/*
 		//ELIMINAR
-		prod.setIdproducto(10);
+		prod.setIdproducto(24);
 		proimp.removeProduct(prod);
 		System.out.println("Producto Eliminado exitosamente");
 		*/
 		 
+		/*
 		//BUSCAR
 		 
-		 prod.setIdproducto(17); // enviar id
+		 prod.setIdproducto(16); // enviar id
 		 TblProducto tblproducto = proimp.findProduct(prod);
 		 
 		 System.out.println(
@@ -87,8 +88,9 @@ public class TestEntidades {
 				 "Fecha Fabricación: " + tblproducto.getFechafabricacion());
 		 
 		 System.out.println("Producto encontrado exitosamente");
-		 
+		 */
 
+		/*
 		//LISTAR
 		 
 		List<TblProducto> listadopro = proimp.listProducts();
@@ -104,7 +106,7 @@ public class TestEntidades {
 					);
 
 		}
-		
+		*/
 
 		 
 		// Objeto Usuario
@@ -115,8 +117,8 @@ public class TestEntidades {
 		 
 		 /*
 		//CREAR
-		user.setUsuario("Jholby");
-		user.setPassword("smith");
+		user.setUsuario("Admin");
+		user.setPassword("123");
 		
 		// Llamar método y enviarle objeto seteado
 		userimp.newUser(user); 
@@ -125,26 +127,26 @@ public class TestEntidades {
 		
 		 /*
 		//EDITAR
-		user.setIdusuario(1);
-		user.setUsuario("Smith");
-		user.setPassword("Segura");
+		user.setIdusuario(7);
+		user.setUsuario("Administrador");
+		user.setPassword("1234");
 		
 		// Llamar método y enviarle objeto seteado
 		userimp.updateUser(user); 
-		System.out.println("Usuario editados exitosamente");
+		System.out.println("Usuario editado exitosamente");
 		*/
 		
 		 /*
 		//ELIMINAR
-		user.setIdusuario(1);
+		user.setIdusuario(7);
 		userimp.removeUser(user);
 		
 		System.out.println("Usuario Eliminado exitosamente");
 		*/
 		 
-		 
+		 /*
 		 //BUSCAR
-		 user.setIdusuario(5); // enviar id
+		 user.setIdusuario(4); // enviar id
 		 TblUsuario tblusuario = userimp.findUser(user);
 		 
 		 System.out.println(
@@ -153,9 +155,9 @@ public class TestEntidades {
 				 "Clave : " + tblusuario.getPassword());
 		 
 		 System.out.println("Usuario encontrado exitosamente");
+		 */
 		 
-		 
-		 
+		 /*
 		// LISTAR
 		List<TblUsuario> listado = userimp.listUsers();
 		for (TblUsuario lis : listado) {
@@ -165,6 +167,7 @@ public class TestEntidades {
 					" Clave: " + lis.getPassword()
 					);
 		}
+		*/
 		
 	}
 
