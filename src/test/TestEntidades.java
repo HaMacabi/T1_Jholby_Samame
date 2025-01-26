@@ -13,7 +13,7 @@ public class TestEntidades {
 
 	public static void main(String[] args) {
 
-		
+		//EXAMEN T1
 		
 		//Objeto Producto
 		TblProducto prod = new TblProducto();
